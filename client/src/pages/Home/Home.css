@@ -1,0 +1,44 @@
+
+.home-container {
+    background-color: black;
+    display: flex; 
+    width: 100%;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    height: max-content; 
+  }
+  
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    background-color: black; 
+    backdrop-filter: blur(10px); 
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .main-content {
+    height: max-content;
+    width: 50vw;
+  }
+  .right-bar{
+    height: max-content;
+    width: max-content;
+  }
+  .left-bar{
+    height: max-content;
+    width: max-content;
+  }
+  
+  .Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; 
+    height: max-content;
+    width: 100%;
+  }
+  

@@ -1,0 +1,146 @@
+h1{
+    color: white;
+    text-align: left;
+}
+p{
+  color: white;
+  text-align: left;
+  margin: 0;
+  background-color: black;
+}
+
+.add-btn{
+    justify-self: right;
+    margin-bottom: 20px;
+    background-color: red;
+    margin-left: auto !important;
+}
+
+.blog-box{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ant-card{
+    border: 0 !important;
+}
+.ant-card-body{
+    padding: 0 !important;
+}
+.ant-card-meta-title{
+    color: white !important;
+    font-size: x-large !important;
+    padding: 10px;
+}   
+.ant-card-meta-description{
+    color: white !important;
+    text-align: left;
+}
+h1.blog-title {
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  h1.blog-title:hover {
+    text-decoration: underline red;
+  }
+  
+  
+  /* Add a hover effect for the "Read More" button */
+  .read-more-btn {
+    color: #fff;
+    border: none;
+    background-color: black;
+    transition: color 0.3s;
+  }
+  
+  .read-more-btn:hover {
+    color: red !important;
+  }
+  .ant-card-actions{
+    background-color: black !important;
+  }
+  .comment-card{
+    width: 40vw !important;
+    margin: 20px;
+  }
+  #addComment{
+    width: 100%;
+    height: 50px;
+  }
+  .userCommented{
+    text-align: right;
+    padding: 10px;
+  }
+  .comment-btn{
+    width: max-content;
+    margin-bottom: 10px;
+  }
+  .comment-card {
+    background: rgba(255, 255, 255, 0.1) !important; /* Semi-transparent white background for the glass effect */
+    border-radius: 10px !important; /* Curved edges */
+    padding: 10px !important; /* Padding for content inside the card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Shadow for the card */
+    backdrop-filter: blur(10px) !important; /* Apply the blur effect */
+    padding-bottom: 40px;
+  }
+  .blogItem{
+    width: max-content;
+    height: max-content;
+    padding-bottom: 100px;
+  }
+  .all-comments {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  /* Styling for individual comment items */
+  .comment-item {
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+  }
+  
+  .comment-item p {
+    text-align: center;
+    background-color: black;
+    font-size: 16px;
+    color: red;
+  }
+  .comments-title{
+    color: white;
+    text-align: left;
+  }
+.comments-btn{
+  background-color: black;
+  color: red;
+  width: fit-content;
+}
+  .user-name{
+    color: white;
+  }
+  .comment-user{
+    color: white;
+  }
+  .comments-length{
+  text-align: left;
+  color: grey;
+  }
+  .comment-item{
+font-size: medium;
+  }
+  .comment-text{
+    text-align: left;
+    background-color: black;
+    color: white;
+    margin: 0;
+  }

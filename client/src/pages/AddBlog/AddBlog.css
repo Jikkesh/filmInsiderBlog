@@ -1,0 +1,58 @@
+/* Style for the container div */
+.add-blog {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for the form labels */
+  label {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  
+  /* Style for the input fields */
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Make the input field take full width */
+  }
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Make the textarea take full width */
+    height: 200px; /* Set the initial height of the textarea */
+  }
+  /* Style for the submit button */
+  button[type="submit"] {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style for the submit button on hover */
+  button[type="submit"]:hover {
+    background-color: black;
+  }
+  

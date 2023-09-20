@@ -1,0 +1,83 @@
+/* MyFooter.css */
+
+/* Footer container */
+.footer {
+  background: rgba(0, 0, 0, 0.8); /* Glass-like transparent background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* Footer container */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo styling */
+.footer-logo .logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Navigation list */
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Navigation list items */
+.footer-nav ul li {
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+/* Navigation links */
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Navigation link hover effect */
+.footer-nav a:hover {
+  color: #ff4500; /* Highlight color */
+}
+
+/* Social media icons */
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+/* Footer bottom text */
+.footer-bottom p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.social-icon {
+  margin: auto;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+
+}
+
+/* Social media icon hover effect */
+.social-icon:hover {
+  color: #ff4500; /* Highlight color */
+  transform: scale(1.2); /* Scale the icon on hover (adjust the value as needed) */
+}

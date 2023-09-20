@@ -1,0 +1,137 @@
+/* Navbar.css */
+
+
+/* Navbar container */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+}
+
+/* Navigation list */
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+/* Logo */
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 6px 10px;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.search-logo{
+  height: 25px;
+  width: 25px;
+}
+
+/* Sign-in button and avatar */
+.sign-in {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-left: auto; /* Push to the right */
+}
+
+.sign-in button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in button:hover {
+  background-color: red;
+}
+
+.avatar {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+}
+
+/* Navigation item */
+.nav-item {
+  margin: 0;
+  position: relative;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-item a:hover {
+  color: #ff4500;
+}
+
+.nav-item a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-item a:hover::before {
+  width: 100%;
+}
+
+  
+  
+  
+  
+  
+  

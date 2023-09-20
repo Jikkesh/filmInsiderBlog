@@ -1,0 +1,173 @@
+/* TrendingScrollBar.css */
+
+.trending-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Black background */
+    padding: 30px;
+  }
+  
+  .box-container-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .box-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px; /* Adjust the gap between boxes */
+    position: relative;
+    transition: transform 0.5s ease; /* Add a smooth transition effect */
+  }
+  
+  .box-container:hover {
+    transform: translateX(-10px); /* Move the entire set of boxes to the left on hover */
+  }
+  
+  .box-container:hover::before,
+  .box-container:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #000 100%);
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+  
+  .box-container:hover::before {
+    left: -10px;
+    opacity: 1;
+  }
+  
+  .box-container:hover::after {
+    right: -10px;
+    opacity: 1;
+  }
+  
+  .card {
+    width: fit-content; /* Each box takes fit-content width */
+    background-color: rgba(0, 0, 0, 0.7) !important; /* Transparent black background for the cards */
+    color: #fff; /* White text color */
+    border: 1px solid #ff4500; /* Red border for the cards */
+    border-radius: 10px; /* Rounded corners for the cards */
+    padding: 20px; /* Add some padding to the cards */
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s; /* Add a smooth transition effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.1); /* Enlarge the card on hover */
+  }
+  
+  .card img {
+    width: 300px; /* Set a maximum width for the images */
+    height: 300px; /* Set a maximum height for the images */
+    object-fit: contain; /* Maintain the aspect ratio while fitting within the container */
+  }
+  
+  .card-title {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left !important;
+  }
+  
+  .whatsCooking-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    justify-content: flex-start; /* Align text to the left */
+    position: relative;
+    text-align: left; /* Left-align text */
+  }
+  
+  .whatsCooking-title::after {
+    content: "";
+    width: 30px; /* Start with a width of 0 */
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: -5px;
+    transform: translateX(5%);
+    transition: width 0.2s ease; /* Add a smooth transition effect for the width change */
+  }
+  
+  .box-container-wrapper:hover .whatsCooking-title::after {
+    width: 200px;
+  }
+  
+  .card .ant-card-body {
+    background-color: transparent !important; /* Override Ant Design styles */
+  }
+  
+  /* Target the title and subtitle in .card component */
+  .card .ant-card-meta-titl {
+    color: #fff !important;
+  }
+  
+  .card-button {
+    background-color: black !important; /* Set the background color to black */
+    color: white; /* Set the text color to white */
+    border: none; /* Remove the border */
+    border-radius: 50%; /* Make the button round */
+    padding: 10px; /* Add padding to the button */
+    font-size: 14px; /* Set the font size */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: transform 0.2s, font-size 0.2s; /* Add smooth transitions for size and font-size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-button:hover {
+    background-color: red !important;
+    transform: scale(1.1); /* Increase the size on hover */
+    font-size: 16px; /* Increase the font size on hover */
+  }
+  
+  .rate-star {
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity (transparent) */
+    padding: 10px;
+  }
+  
+  .next-button-container {
+    position: absolute;
+    right: -30px; /* Initial position hidden on the right */
+    top: 50%;
+    transform: translateX(100%);
+    transition: right 0.2s ease; /* Add smooth transition for position */
+    z-index: 2; /* Ensure the button is above the cards */
+  }
+  
+  .next-button {
+    background-color: #ff4500; /* Red background color */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 50%; /* Make it circular */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .box-container:hover .next-button-container {
+    right: 0; /* Move the button into view on hover */
+    transform: translateX(0);
+  }
+ 
